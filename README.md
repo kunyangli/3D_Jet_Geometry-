@@ -1,4 +1,7 @@
 # 3D_Jet_Geometry-
+Last Edited: Dec 2016
+Questions: Contact Katie Kosak, katie.kosak@gmail.com
+
 Python code that models the 3D geometry of AGN jets
 
 Make sure the files are in the same directory. 
@@ -18,16 +21,20 @@ To use the functions necessary for the calculations, use the following:
 
 jet.Find_MaxFlux(file1,Upstream_Bounds,number_of_points)
 
+To execute the code, execute the Jet_Curry_Main.py code as a normal Python code. If the Jet_Curry.pyc file is in the same directory as Jet_Curry_Main, the functions will be automatically imported. 
+
 where jet tells the code to pull the function from the code Jet_Curry. Find_MaxFlux is the function in Jet_Curry being called. 
 
 For the functions in Jet_Curry, all arguments must be included as the example. 
 
 The following must be defined:
 
-1) The core location is the point where the stream originates in the code. 
+1) The core location is the point where the stream originates in the code. Not necessarily the origin. 
 
-2) Upstream is the core points. However, it still needs to be defined just in case the user didn't want the core in the geometry calculations.
+2) Upstream is the core points (by default). However, it still needs to be defined just in case the user didn't want the core in the geometry calculations.
 
-3) Downstream is the point where the code should stop calculating the 3D Geometry. 
+3) Downstream is the point where the code should stop. 
 
-4) Theta. Line of sight. This value must be entered in radians. 
+4) Theta, angle of line of sight. This value must be entered in radians. 
+
+5) Fits Image must be a standard NASA FITS file format to be read by astropy. 
