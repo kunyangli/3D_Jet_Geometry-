@@ -10,6 +10,18 @@ mess around with this code.
 Jet_Curry_Main is the code that the user will use to define the fits file, define the 
 core location, etc. 
 
+To call in the tools used from Jet_Curry, the following command is used:
+
+import Jet_Curry as jet
+
+To use the functions necessary for the calculations, use the following:
+
+jet.Find_MaxFlux(file1,Upstream_Bounds,number_of_points)
+
+where jet tells the code to pull the function from the code Jet_Curry. Find_MaxFlux is the function in Jet_Curry being called. 
+
+For the functions in Jet_Curry, all arguments must be included as the example. 
+
 The following must be defined:
 
 1) The core location is the point where the stream originates in the code. 
