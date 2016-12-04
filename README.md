@@ -38,3 +38,13 @@ The following must be defined:
 4) Theta, angle of line of sight. This value must be entered in radians. 
 
 5) Fits Image must be a standard NASA FITS file format to be read by astropy. 
+
+----- Visual Python-----
+
+Visual Python can be used to view the 3D structure in a graphics IDE.
+
+The installation of VPython can be found in detail here: vpython.org
+
+The code should be run from the VPython IDE and will automatically read in the x,y,z from the Cartesian_Coordinates file.
+
+With the line of sight, visulatizations, the code must be manually changed by the user. If you have questions about the use of our Vpython code, please ask.
